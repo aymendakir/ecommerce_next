@@ -1,7 +1,9 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import { Fade, Slide } from "react-awesome-reveal";
 import { useSpring, animated } from "react-spring";
+import img from "../../../public/images/backpack.png";
 const Main = () => {
   const [isDarkMode, toggle] = useState(false);
 
@@ -109,7 +111,7 @@ const Main = () => {
       </div>
       <Slide direction="right">
         <div className="main-image">
-          <img src="/images/backpack.png" alt="img" className="bigimg" />
+          <Image src={img} alt="imag" className="bigimg" />
         </div>
       </Slide>
     </main>
